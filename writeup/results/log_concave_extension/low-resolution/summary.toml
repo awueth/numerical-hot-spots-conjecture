@@ -1,0 +1,67 @@
+step = "summary"
+
+[eigenvalue_bounds]
+core_lambda1_cr_lower = 3.728001417548186
+core_lambda2_cr_lower = 8.99760272131591
+lambda1_lower = 3.7279273803850668
+lambda1_upper = 5.197567444811302
+lambda2_lower = 8.90462957787952
+
+    [eigenvalue_bounds.lambda1_wing_correction_factor]
+    hi = 0.9999963807367129
+    lo = 0.999980140253496
+
+    [eigenvalue_bounds.lambda2_wing_correction_factor]
+    hi = 0.9982152433183087
+    lo = 0.989666898359923
+
+[fem]
+h_K = 0.026490714069031616
+max_oscillation = 2.6551425206070185
+partition = [192, 96]
+raw_eigenvalues = [2.025612913813531e-12, 3.8001102247026615, 9.429448996515372, 17.60787999966617]
+
+[inputs]
+config = "low-resolution"
+fit_checkpoint = "checkpoints/log_concave_extension/high-resolution/first_eigenfunction.chk"
+potential_checkpoint = "checkpoints/log_concave_extension/high-resolution/lse_global_potential.chk"
+
+[mps_candidate]
+hot_spot_effect = 0.00020766846124298244
+lambda = 3.80155720841065
+linf = 0.390630422302017
+n_modes = [128, 32]
+residual_inf = 0.02892189304897591
+
+[pointwise_limit]
+alpha = 0.35
+coefficient = 0.5742459612321011
+eigenvalue_growth_mismatch = 0.30663123060589537
+head_term = 652.0279523760355
+lambda_error = 1.396010236400652
+observation_time = 0.125
+phi_linf_bound = 0.390630422302017
+pointwise_linf_bound = 597.545165310221
+propagated_linf_bound = 1144.3939491559725
+reaction_growth_factor = 1.6083272296049063
+residual_bound = 0.02892189304897591
+s1 = 1.5
+tail_decays = true
+tail_rate = -0.5904417808103863
+tail_term = 388.5456095661836
+
+[potential_measure.normalization_constant]
+hi = 0.6107813112222337
+lo = 0.5833605221642847
+
+[potential_measure.relative_wing_mass]
+hi = 1.1701994046494058e-13
+lo = 5.283025511997598e-14
+
+[potential_measure.unnormalized_core_mass]
+hi = 0.6107813112221654
+lo = 0.5833605221642525
+
+[potential_measure.unnormalized_wing_mass]
+hi = 6.826481357326123e-14
+lo = 3.2267732494384054e-14
